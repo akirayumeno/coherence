@@ -1,9 +1,5 @@
 {
   "scripts": {
-    "build": "hugo --gc --minify",
-    "vercel-build": "hugo --gc --minify --baseURL $VERCEL_URL"
-  },
-  "devDependencies": {
-    "hugo-bin": "^0.125.4"
+    "build": "hugo --gc --minify"
   }
 }
