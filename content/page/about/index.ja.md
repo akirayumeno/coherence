@@ -8,11 +8,6 @@ aliases:
   - contact
 license: CC BY-NC-ND
 lastmod: '2020-10-09'
-menu:
-    main: 
-        weight: -90
-        params:
-            icon: user
 ---
 ## Who am I?
 - 肖 明芳（XIAO MINGFANG）
