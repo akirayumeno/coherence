@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <style>
+        .project-list {
+            display: grid;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .project-card {
+            border: 1px solid #eee;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        .project-card h2 {
+            margin-top: 0;
+        }
+        .project-image {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ .Title }}</h1>
+    
+    <!-- 渲染正文内容 -->
+    {{ .Content }}
+    
+    <!-- 渲染项目列表 -->
+    <div class="project-list">
+        {{ range .Params.projects }}
+        <div class="project-card">
+            {{ if .image }}
+            <img src="{{ .image }}" alt="{{ .title }}" class="project-image">
+            {{ end }}
+            
+            <h2>{{ .title }}</h2>
+            <p>{{ .description }}</p>
+            
+            {{ if .website }}
+            <a href="{{ .website }}" target="_blank" rel="noopener">查看项目</a>
+            {{ end }}
+        </div>
+        {{ else }}
+        <p>暂无项目</p>
+        {{ end }}
+    </div>
+</body>
+</html>

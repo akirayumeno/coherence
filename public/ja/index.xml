@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>coherence</title>
+        <link>http://localhost:1313/ja/</link>
+        <description>Recent content on coherence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja</language>
+        <copyright>coherence</copyright>
+        <lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/ja/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About</title>
+        <link>http://localhost:1313/ja/about/</link>
+        <pubDate>Thu, 23 Jan 2025 18:21:34 +0900</pubDate>
+        
+        <guid>http://localhost:1313/ja/about/</guid>
+        <description>&lt;h2 id=&#34;who-am-i&#34;&gt;Who am I?
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;肖 明芳（XIAO MINGFANG）&lt;/li&gt;
+&lt;li&gt;三菱電機ビルソリューションズでソリューションエンジニア(2025.6.16~)&lt;/li&gt;
+&lt;li&gt;日立Astemo株式会社で調達（2024.4〜2025.6.13）&lt;/li&gt;
+&lt;li&gt;一橋大学大学院経済学研究科[森川正之研究室]（2024.3修了）&lt;/li&gt;
+&lt;li&gt;長沙大学外国語学部日本語学科（2019.7卒業）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;research-theme&#34;&gt;Research Theme
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://ssjda.iss.u-tokyo.ac.jp/Direct/resultsearch.php?eid=1427&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;mark style=&#34;color: white; background-color: transparent;&#34;&gt;新型コロナによるワークライフバランスへの影響−男女間格差を中心とした分析&lt;/mark&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;qualifications&#34;&gt;Qualifications
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;2024-10: 基本情報技術者(IP 試験)&lt;/li&gt;
+&lt;li&gt;2024-01: 簿記三級 (IP 試験)&lt;/li&gt;
+&lt;li&gt;2022-10: TOEIC L&amp;amp;R 805 (IP 試験)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;award&#34;&gt;Award
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;2019−07: Outstanding Graduates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;email&#34;&gt;email:
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;akirayumeno233(at)gmail.com&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
