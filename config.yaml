@@ -68,7 +68,7 @@ params:
             src: img/avatar.png
 
     article:
-        math: true
+        math: false
         toc: true
         readingTime: true
         license:
@@ -197,9 +197,9 @@ params:
 
     imageProcessing:
         cover:
-            enabled: true
+            enabled: false
         content:
-            enabled: true
+            enabled: false
 
 ### Custom menu
 ### See https://stack.jimmycai.com/config/menu
