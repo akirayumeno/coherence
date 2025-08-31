@@ -1,5 +1,5 @@
 {
-  "buildCommand": "hugo --gc --minify",
-  "outputDirectory": "public", 
-  "installCommand": "curl -sL https://github.com/gohugoio/hugo/releases/download/v0.125.4/hugo_extended_0.125.4_linux-amd64.tar.gz | tar -xz && mv hugo /usr/local/bin/"
+  "buildCommand": "/usr/local/bin/hugo version && /usr/local/bin/hugo --gc --minify",
+  "outputDirectory": "public",
+  "installCommand": "wget -O hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.125.4/hugo_extended_0.125.4_linux-amd64.tar.gz && tar -xzf hugo.tar.gz -C /usr/local/bin/ hugo && chmod +x /usr/local/bin/hugo && rm hugo.tar.gz"
 }
