@@ -236,12 +236,16 @@ menu:
       url: https://github.com/akirayumeno
       params:
         icon: brand-github
-    
     - name: Bilibili
       url: https://space.bilibili.com/834935?spm_id_from=333.1007.0.0
       params:
         icon: brand-bilibili
+    - name: Email
+      url: akirayumeno233@gmail.com
+      params:
+        icon: mail
 
+        
 related:
     includeNewer: true
     threshold: 60
