@@ -241,7 +241,10 @@ menu:
       params:
         icon: brand-bilibili
     - email: "akirayumeno233@gmail.com"
-        
+      url: "mailto:your-email@example.com"  # 直接写mailto链接
+      params:
+        icon: "fas fa-envelope"
+      
 related:
     includeNewer: true
     threshold: 60
