@@ -1,5 +1,7 @@
 {{- with .Site.Params.comments.cactus -}}
-{{- partial "helper/external" (dict "Context" $ "Namespace" "Cactus") -}}
+<!-- 直接加载CSS和JS -->
+<link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+<script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
 
 <style>
     .cactus-editor-textarea {
