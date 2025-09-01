@@ -44,6 +44,8 @@ permalinks:
     page: /:slug/
 
 params:
+    font:
+        family: "LXGW WenKai Screen, Microsoft YaHei, sans-serif"
     mainSections:
         - post
     featuredImageField: image
