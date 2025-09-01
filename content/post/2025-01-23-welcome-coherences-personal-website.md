@@ -8,4 +8,5 @@ aliases:
   - /archives/13
 ---
 
+![猫猫](/images/1737614396-wallhaven-6d7g2l.jpg)
 > > we have the ability to chose the life that you want.
