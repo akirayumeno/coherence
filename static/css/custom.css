@@ -1,12 +1,35 @@
-/* 强制应用字体设置 */
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+{{- $description := partialCached "data/description" . .RelPermalink -}}
+<meta name='description' {{ printf "content=%q" $description | safeHTMLAttr }}>
+{{ with .Params.Keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
+{{- $title := partial "data/title" . -}}
+<title>{{ $title }}</title>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" />
+
+<!-- 内联样式覆盖默认字体 -->
+<style>
 :root {
     --sys-font-family: "LXGW WenKai Screen", "Microsoft YaHei", sans-serif !important;
     --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei" !important;
     --base-font-family: var(--sys-font-family), var(--zh-font-family), sans-serif !important;
-    --code-font-family: Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace !important;
+    --code-font-family: "LXGW WenKai Screen", Menlo, Monaco, Consolas, "Courier New", monospace !important;
 }
 
-/* 如果CSS变量不生效，直接指定 */
-body, .article-content, .article-title {
+body, html {
     font-family: "LXGW WenKai Screen", "Microsoft YaHei", sans-serif !important;
 }
+</style>
+
+<link rel='canonical' href='{{ .Permalink }}'>
+{{- partial "head/style.html" . -}}
+{{- partial "head/script.html" . -}}
+{{- partial "head/opengraph/include.html" . -}}
+{{- range .AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+{{- end -}}
+{{ with .Site.Params.favicon }}
+    <link rel="shortcut icon" href="{{ . | relURL }}" />
+{{ end }}
+{{- template "_internal/google_analytics.html" . -}}
+{{- partial "head/custom.html" . -}}
