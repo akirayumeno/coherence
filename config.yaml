@@ -240,7 +240,7 @@ menu:
       url: https://space.bilibili.com/834935?spm_id_from=333.1007.0.0
       params:
         icon: brand-bilibili
-    email: "akirayumeno233@gmail.com"
+    - email: "akirayumeno233@gmail.com"
         
 related:
     includeNewer: true
