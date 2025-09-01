@@ -73,15 +73,10 @@ params:
     assets:
     externalLink:
       enable: true
-    Cactus:
-      css:
-        - https://latest.cactus.chat/style.css
-      js:
-        - https://latest.cactus.chat/cactus.js
         
     comments:
         enabled: true
-        provider: cactus
+        provider: giscus
         
         cactus:
           defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
