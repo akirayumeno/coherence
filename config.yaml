@@ -230,19 +230,17 @@ menu:
       weight: 5
       params:
         icon: tag
-
+        
   social:
-    - identifier: github
-        name: GitHub
-        url: https://github.com/akirayumeno
-        params:
+    - name: GitHub
+      url: https://github.com/akirayumeno
+      params:
         icon: brand-github
     
-      - identifier: bilibili
-        name: Bilibili
-        url: https://space.bilibili.com/834935?spm_id_from=333.1007.0.0
-        params:
-            icon: brand-bilibili    
+    - name: Bilibili
+      url: https://space.bilibili.com/834935?spm_id_from=333.1007.0.0
+      params:
+        icon: brand-bilibili
 
 related:
     includeNewer: true
