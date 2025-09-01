@@ -1,1 +1,21 @@
-:root { --font-family: "LXGW WenKai Screen", "Microsoft YaHei", sans-serif; }
+/* static/css/custom.css */
+
+/* 加载字体 */
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css');
+
+/* 强制覆盖所有字体设置 */
+html body {
+    --font-family: "LXGW WenKai Screen", "Microsoft YaHei", sans-serif !important;
+}
+
+body, 
+p, 
+h1, h2, h3, h4, h5, h6,
+div, span, a {
+    font-family: "LXGW WenKai Screen", "Microsoft YaHei", sans-serif !important;
+}
+
+/* 代码字体 */
+code, pre, kbd, samp {
+    font-family: "LXGW WenKai Screen", "Microsoft YaHei", monospace !important;
+}
