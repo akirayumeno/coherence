@@ -1,16 +1,12 @@
-html body {
-    --sys-font-family: "LXGW WenKai Screen", "Microsoft YaHei" !important;
-    --zh-font-family: "LXGW WenKai Screen", "Microsoft YaHei" !important;
-    --base-font-family: "LXGW WenKai Screen", "Microsoft YaHei", sans-serif !important;
-    --code-font-family: "LXGW WenKai Screen", "Microsoft YaHei", monospace !important;
+/* 强制应用字体设置 */
+:root {
+    --sys-font-family: "LXGW WenKai Screen", "Microsoft YaHei", sans-serif !important;
+    --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei" !important;
+    --base-font-family: var(--sys-font-family), var(--zh-font-family), sans-serif !important;
+    --code-font-family: Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace !important;
 }
 
-/* 同时直接设置 body 字体 */
-body {
+/* 如果CSS变量不生效，直接指定 */
+body, .article-content, .article-title {
     font-family: "LXGW WenKai Screen", "Microsoft YaHei", sans-serif !important;
-}
-
-/* 代码字体 */
-code, pre {
-    font-family: "LXGW WenKai Screen", "Microsoft YaHei", monospace !important;
 }
