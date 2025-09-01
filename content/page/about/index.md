@@ -18,7 +18,7 @@ lastmod: '2020-10-09'
 
 ## Research Theme
 
-- [<mark style="color: white; background-color: transparent;">Impact of COVID-19 on Work-Life Balance: Analysis of Gender Disparities</mark>](https://ssjda.iss.u-tokyo.ac.jp/Direct/resultsearch.php?eid=1427)
+- [<mark style="background-color: transparent;">Impact of COVID-19 on Work-Life Balance: Analysis of Gender Disparities</mark>](https://ssjda.iss.u-tokyo.ac.jp/Direct/resultsearch.php?eid=1427)
 
 ## Qualifications
 
