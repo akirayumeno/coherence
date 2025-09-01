@@ -77,7 +77,7 @@ params:
         cactus:
           defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
           serverName: "cactus.chat"
-          siteName: "coherence"
+          siteName: "coherence's blog"
           
         disqusjs:
             shortname:
