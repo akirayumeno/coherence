@@ -78,14 +78,26 @@ params:
         
     comments:
         enabled: true
-          
+        provider: giscus
+        
         disqusjs:
             shortname:
             apiUrl:
             apiKey:
             admin:
             adminLabel:
-
+            
+        giscus:
+            repo:
+            repoID:
+            category:
+            categoryID:
+            mapping:
+            lightTheme:
+            darkTheme:
+            reactionsEnabled: 1
+            emitMetadata: 0
+            
         utterances:
             repo:
             issueTerm: pathname
