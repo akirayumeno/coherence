@@ -33,7 +33,8 @@
     {{ partial "article/components/related-content" . }}
      
     {{ if not (eq .Params.comments false) }}
-        {{ partial "comments/include" . }}
+        /*{{ partial "comments/include" . }}*/
+        {{< chat cactus-comments >}}
     {{ end }}
 
     {{ partialCached "footer/footer" . }}
