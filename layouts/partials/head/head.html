@@ -8,6 +8,7 @@
 {{- $title := partial "data/title" . -}}
 <title>{{ $title }}</title>
 
+<link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
 <link rel='canonical' href='{{ .Permalink }}'>
 
 {{- partial "head/style.html" . -}}
