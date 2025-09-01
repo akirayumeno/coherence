@@ -12,7 +12,18 @@
 {{- partial "head/script.html" . -}}
 
 <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" />
-<link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
+<style>
+:root {
+    --sys-font-family: "LXGW WenKai Screen", "Microsoft YaHei", sans-serif !important;
+    --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei" !important;
+    --base-font-family: var(--sys-font-family), var(--zh-font-family), sans-serif !important;
+    --code-font-family: "LXGW WenKai Screen", Menlo, Monaco, Consolas, "Courier New", monospace !important;
+}
+
+body, html, * {
+    font-family: "LXGW WenKai Screen", "Microsoft YaHei", sans-serif !important;
+}
+</style>
 
 <link rel='canonical' href='{{ .Permalink }}'>
 {{- partial "head/opengraph/include.html" . -}}
