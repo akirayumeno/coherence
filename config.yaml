@@ -41,8 +41,6 @@ params:
     mainSections:
         - post
     featuredImageField: image
-    features:
-        photoswipe: true
     rssFullContent: true
     languageSwitcher: false
     hideEmptyLanguages: true
