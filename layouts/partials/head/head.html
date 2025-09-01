@@ -8,14 +8,14 @@
 {{- $title := partial "data/title" . -}}
 <title>{{ $title }}</title>
 
-<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" />
-<link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
-<link rel='canonical' href='{{ .Permalink }}'>
-
 {{- partial "head/style.html" . -}}
 {{- partial "head/script.html" . -}}
-{{- partial "head/opengraph/include.html" . -}}
 
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" />
+<link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
+
+<link rel='canonical' href='{{ .Permalink }}'>
+{{- partial "head/opengraph/include.html" . -}}
 {{- range .AlternativeOutputFormats -}}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{- end -}}
