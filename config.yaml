@@ -41,6 +41,8 @@ params:
     mainSections:
         - post
     featuredImageField: image
+    features:
+        photoswipe: true
     rssFullContent: true
     languageSwitcher: false
     hideEmptyLanguages: true
@@ -76,12 +78,6 @@ params:
         
     comments:
         enabled: true
-        provider: giscus
-        
-        cactus:
-          defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
-          serverName: "cactus.chat"
-          siteName: "coherence's blog"
           
         disqusjs:
             shortname:
@@ -140,17 +136,6 @@ params:
             defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
             serverName: "cactus.chat"
             siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
-
-        giscus:
-            repo:
-            repoID:
-            category:
-            categoryID:
-            mapping:
-            lightTheme:
-            darkTheme:
-            reactionsEnabled: 1
-            emitMetadata: 0
 
         gitalk:
             owner:
