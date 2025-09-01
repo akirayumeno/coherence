@@ -20,14 +20,6 @@ languages:
         params:
             sidebar:
                 subtitle: coherence's blog.
-    ja:
-        languageName: 日本語
-        title: coherence
-        weight: 2
-        params:
-            sidebar:
-                subtitle: coherenceのブログ.
-
 services:
     # Change it to your Disqus shortname before using
     disqus:
