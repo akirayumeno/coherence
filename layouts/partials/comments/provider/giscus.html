@@ -1,21 +1,19 @@
 {{- with .Site.Params.comments.giscus -}}
-<script
-    src="https://giscus.app/client.js"
-    data-repo="{{- .repo -}}"
-    data-repo-id="{{- .repoID -}}"
-    data-category="{{- .category -}}"
-    data-category-id="{{- .categoryID -}}"
-    data-mapping="{{- default `title` .mapping -}}"
-    data-strict="{{- default 0 .strict -}}"
-    data-reactions-enabled="{{- default 1 .reactionsEnabled -}}"
-    data-emit-metadata="{{- default 0 .emitMetadata -}}"
-    data-input-position="{{- default `top` .inputPosition -}}"
-    data-theme="{{- default `light` .lightTheme -}}"
-    data-lang="{{- default `en` .lang -}}"
-    data-loading="{{- .loading -}}"
-    crossorigin="anonymous"
-    async
-></script>
+<script src="https://giscus.app/client.js"
+        data-repo="akirayumeno/coherence"
+        data-repo-id="R_kgDOPnVUuA"
+        data-category="General"
+        data-category-id="DIC_kwDOPnVUuM4Cu0xf"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
 <script>
     function setGiscusTheme(theme) {
         let giscus = document.querySelector("iframe.giscus-frame");
