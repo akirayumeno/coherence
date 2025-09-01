@@ -69,7 +69,16 @@ params:
         license:
             enabled: true
             default: Licensed under CC BY-NC-SA 4.0
-
+            
+    assets:
+    externalLink:
+      enable: true
+    Cactus:
+      css:
+        - https://latest.cactus.chat/style.css
+      js:
+        - https://latest.cactus.chat/cactus.js
+        
     comments:
         enabled: true
         provider: cactus
