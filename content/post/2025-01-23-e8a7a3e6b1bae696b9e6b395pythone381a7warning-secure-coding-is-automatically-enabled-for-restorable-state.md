@@ -1,5 +1,5 @@
 ---
-title: '[解決方法]PythonでWARNING: Secure coding is automatically enabled for restorable state.'
+title: 'WARNING: Secure coding is automatically enabled for restorable state.'
 date: '2025-01-23T16:59:30+09:00'
 author: coherence
 categories:
@@ -7,11 +7,7 @@ categories:
 tags:
   - macOS
   - Python
-  - markdown
-  - css
-  - html
 aliases:
-  - migrate-from-jekyl
   - /archives/27
 ---
 
@@ -23,7 +19,7 @@ aliases:
 
 ## 画面 
 
-```
+```python
 <mark class="has-inline-color has-vivid-purple-color" style="background-color:rgba(0, 0, 0, 0)">from turtle import Turtle, Screen
 from paddle import Paddle
 from ball import Ball
@@ -41,4 +37,4 @@ WARNING: Secure coding is automatically enabled for restorable state! However, n
 
 ## 解决
 
-把pycharm从python 3.9更新到了python 3.11。
+把pycharm从python 3.9更新到了python 3.11成功解决。
