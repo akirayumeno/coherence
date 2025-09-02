@@ -11,10 +11,12 @@ lastmod: '2020-10-09'
 ---
 ## Who am I?
 - Mingfang XIAO
-- Solution Engineer at Mitsubishi Electric Building Solutions (From June 16, 2025)
-- Procurement at Hitachi Astemo (April 2024 - June 13, 2025)
-- Graduate School of Economics, Hitotsubashi University [Laboratory of Masayuki Morikawa] (Completed March 2024)
-- Japanese Language Department, Changsha University (Graduated July 2019)
+- Solution Engineer at Mitsubishi Electric Building Solutions (From 2025.6)
+- Procurement at Hitachi Astemo (2024.4 - 2025.7)
+- Master degree of Economics, Hitotsubashi University [Laboratory of Masayuki Morikawa] (Graduated 2024.3)
+- System Engineer at Facelink (2021.9~2022.2)
+- System Engineer at TE system (2020.2~2021.6)
+- Japanese Language Department, Changsha University (Graduated 2019.7)
 
 ## Research Theme
 
@@ -23,7 +25,7 @@ lastmod: '2020-10-09'
 ## Qualifications
 
 - October 2024: Fundamental Information Technology Engineer Examination (IP Test)
-- January 2024: Bookkeeping Grade 3 (IP Test) 
+- January 2024: Boki Grade 3 (IP Test) 
 - October 2022: TOEIC L&R 805 (IP Test)
 
 ## Award
