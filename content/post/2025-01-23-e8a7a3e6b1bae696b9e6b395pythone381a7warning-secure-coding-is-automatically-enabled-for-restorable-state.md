@@ -15,13 +15,13 @@ aliases:
   - /archives/27
 ---
 
-## 環境
+## 环境
 
 ・macOS Sonoma  
 ・pycharm  
 ・python 8
 
-## 事象 
+## 画面 
 
 ```
 <mark class="has-inline-color has-vivid-purple-color" style="background-color:rgba(0, 0, 0, 0)">from turtle import Turtle, Screen
@@ -35,15 +35,10 @@ screen.title("Pong")
 screen.tracer(0)</mark>
 ```
 
-## **エラーが出た**
+## 报错
 
 WARNING: Secure coding is automatically enabled for restorable state! However, not on all supported macOS versions of this application. Opt-in to secure coding explicitly by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState:  
-みたいな警告メッセージが出てきて、画面が飛んでくるはずだが、飛んでいなかった。
 
-## **解決方法**
+## 解决
 
-pycharmでpython 3.9をpython 3.11に更新した。
-
-## 結果
-
-治った、warningメッセージが出てこないし、画面も起動できるようになった。
+把pycharm从python 3.9更新到了python 3.11。
