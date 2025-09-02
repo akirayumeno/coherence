@@ -36,6 +36,7 @@ permalinks:
     page: /:slug/
 
 params:
+    description: "Coherence - A website exploring technology, memos, and ideas."
     customCSS:
         - "scss/custom.scss"
     mainSections:
