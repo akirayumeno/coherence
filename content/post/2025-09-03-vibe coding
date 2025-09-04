@@ -1,5 +1,5 @@
 ---
-title: 'vibe coding'
+title: 'Vibe coding'
 date: '2025-09-03T17:01:01+09:00'
 authors:
   - coherence
@@ -11,6 +11,7 @@ tags:
   - Python
 aliases:
   - /archives/72
+draft: false
 ---
 
 ## 环境
