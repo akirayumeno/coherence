@@ -19,19 +19,15 @@ lastmod: '2020-10-09'
 - Japanese Language Department, Changsha University (Graduated 2019.7)
 
 ## Research Theme
-
 - [Impact of COVID-19 on Work-Life Balance: Analysis of Gender Disparities](https://ssjda.iss.u-tokyo.ac.jp/Direct/resultsearch.php?eid=1427)
 
 ## Qualifications
-
 - October 2024: Fundamental Information Technology Engineer Examination (IP Test)
 - January 2024: Boki Grade 3 (IP Test) 
 - October 2022: TOEIC L&R 805 (IP Test)
 
 ## Award
-
 - July 2019: Outstanding Graduates
 
 ## Email
-
 - akirayumeno233(at)gmail.com
