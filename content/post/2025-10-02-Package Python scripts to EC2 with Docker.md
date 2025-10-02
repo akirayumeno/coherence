@@ -1,11 +1,10 @@
 ---
 title: "Package Python scripts to EC2 with Docker"
-date: 2025-10-02T17:01:01+09:00
+date: 2025-10-02T14:01:01+09:00
 draft: false          
 type: "post"         
 categories:
-  - Memo
-  - Tech
+  - Tech Notes
 tags:
   - Docker
   - Python
@@ -16,7 +15,6 @@ aliases:
 ---
 
 ## Environment
-
 - Amazon linux 2023  
 - Vscode  
 - Python 3.11  
