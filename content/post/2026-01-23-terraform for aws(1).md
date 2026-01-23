@@ -50,26 +50,28 @@ aws sts get-caller-identity
 
 ## About backend
 ### Local Backend
-- Storage location: Your local computer folder, named terraform.tfstate.
-- Advantages:
-Simple setup with no extra configuration needed, ideal for beginners experimenting on their own machines.
-- Disadvantages:
+Storage location: 
+- Your local computer folder, named terraform.tfstate.
 
-No collaboration: Your colleagues can't access your local file, so when they run the code, it will assume the cloud is empty. 
+Advantages:
+- Simple setup with no extra configuration needed, ideal for beginners experimenting on their own machines.
 
-Insecure: If your computer crashes or you accidentally delete the folder, you lose control over cloud resources (requiring manual deletion via the console).
+Disadvantages:
+- No collaboration: Your colleagues can't access your local file, so when they run the code, it will assume the cloud is empty. 
 
-Sensitive data: This file stores plaintext configuration details, posing a leakage risk when stored locally.
+- Insecure: If your computer crashes or you accidentally delete the folder, you lose control over cloud resources (requiring manual deletion via the console).
+
+- Sensitive data: This file stores plaintext configuration details, posing a leakage risk when stored locally.
 
 ### Remote Backend
-- Storage location: your Terraform cloud plateform(free up to 5 users) or S3
-- Advantages:
+Storage location: 
+- your Terraform cloud plateform(free up to 5 users) or S3
+Advantages:
+- Team Collaboration: Anyone with permissions can read the same state file, enabling collaborative work.
 
-Team Collaboration: Anyone with permissions can read the same state file, enabling collaborative work.
+- High Security: With S3 versioning enabled, accidentally deleted states can be recovered.
 
-High Security: With S3 versioning enabled, accidentally deleted states can be recovered.
-
-Locking Mechanism: When paired with AWS DynamoDB, it prevents two users from simultaneously running `apply` commands and causing environment chaos (similar to conflicts when multiple people edit the same Word document).
+- Locking Mechanism: When paired with AWS DynamoDB, it prevents two users from simultaneously running `apply` commands and causing environment chaos (similar to conflicts when multiple people edit the same Word document).
 
 ```hcl
 # To contruct a remote backend environment(terraform cloud)
@@ -125,7 +127,7 @@ resource "aws_dynamodb_table" "terraform_locks" {
 # Use the terraformer not officially but have efficiency
 terraformer import aws -r vpc,subnet,sg,ec2_instance --regions=ap-northeast-1
 ```
-# Or you want to convert by id
+### Or you want to convert by id
 ```hcl
 resource "aws_instance" "my_server" {
   # Leave this blank for now. Terraform will prompt you to complete it after import.
@@ -134,11 +136,13 @@ resource "aws_instance" "my_server" {
 ```bash
 terraform import aws_instance.my_server i-1234567890abcdef0
 terraform plan
-
-# Or you want to convert by tags
+```
+### Or you want to convert by tags
+```bash
 terraformer import aws -r ec2_instance --filter="Name=tags.Team;Value=DevOps" --filter="Name=tags.Project;Value=MyProject"
-
-# If you have so many instance ids
+```
+### If you have so many instance ids
+```bash
 $instances = @(
   "i-0123456789abcdef0",
   "i-0123456789abcdef1",
