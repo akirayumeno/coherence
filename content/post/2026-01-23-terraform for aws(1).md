@@ -65,7 +65,8 @@ Disadvantages:
 
 ### Remote Backend
 Storage location: 
-- your Terraform cloud plateform(free up to 5 users) or S3
+- Your Terraform cloud plateform(free up to 5 users) or S3.
+
 Advantages:
 - Team Collaboration: Anyone with permissions can read the same state file, enabling collaborative work.
 
@@ -155,13 +156,17 @@ foreach ($id in $instances) {
 ```
 
 ## Error
-To enable one-click import of terraformer configurations, they must match Terraform configurations and be AMD64-compatible; otherwise, errors will occur. Additionally, this folder is required to store the terraform-provider-aws_v4.51.0_x5.exe file.
+To enable one-click import of terraformer configurations, they must match Terraform configurations and be AMD64-compatible; otherwise, errors will occur. 
+
 ```bash
 open \.terraform.d/plugins/windows_amd64: The system cannot find the path specified.
+```
 
-C:\Users\ZE38833\.terraform.d\plugins\windows_amd64
+Additionally, this folder is required to store the terraform-provider-aws_v4.51.0_x5.exe file.
+```bash
+C:\Users\XXXXX\.terraform.d\plugins\windows_amd64
 ```
 
 ## Additional words
-Switching to Terraform changed my perspective on cloud management. It’s no longer about 'where to click,' but about 'how to architect.'
+Switching to Terraform changed my perspective on cloud management. It's no longer about 'where to click,' but about 'how to architect.'
 
