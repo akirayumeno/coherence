@@ -1,5 +1,5 @@
 ---
-title: "terraform for aws(1)"
+title: "Terraform for aws(1)"
 date: 2026-01-23T10:05:01+09:00
 draft: false          
 type: "post"         
@@ -54,16 +54,22 @@ aws sts get-caller-identity
 - Advantages:
 Simple setup with no extra configuration needed, ideal for beginners experimenting on their own machines.
 - Disadvantages:
-• No collaboration: Your colleagues can't access your local file, so when they run the code, it will assume the cloud is empty. 
-• Insecure: If your computer crashes or you accidentally delete the folder, you lose control over cloud resources (requiring manual deletion via the console).
-• Sensitive data: This file stores plaintext configuration details, posing a leakage risk when stored locally.
+
+No collaboration: Your colleagues can't access your local file, so when they run the code, it will assume the cloud is empty. 
+
+Insecure: If your computer crashes or you accidentally delete the folder, you lose control over cloud resources (requiring manual deletion via the console).
+
+Sensitive data: This file stores plaintext configuration details, posing a leakage risk when stored locally.
 
 ### Remote Backend
 - Storage location: your Terraform cloud plateform(free up to 5 users) or S3
 - Advantages:
-• Team Collaboration: Anyone with permissions can read the same state file, enabling collaborative work.
-• High Security: With S3 versioning enabled, accidentally deleted states can be recovered.
-• Locking Mechanism: When paired with AWS DynamoDB, it prevents two users from simultaneously running `apply` commands and causing environment chaos (similar to conflicts when multiple people edit the same Word document).
+
+Team Collaboration: Anyone with permissions can read the same state file, enabling collaborative work.
+
+High Security: With S3 versioning enabled, accidentally deleted states can be recovered.
+
+Locking Mechanism: When paired with AWS DynamoDB, it prevents two users from simultaneously running `apply` commands and causing environment chaos (similar to conflicts when multiple people edit the same Word document).
 
 ```hcl
 # To contruct a remote backend environment(terraform cloud)
@@ -118,7 +124,7 @@ resource "aws_dynamodb_table" "terraform_locks" {
 ```bash
 # Use the terraformer not officially but have efficiency
 terraformer import aws -r vpc,subnet,sg,ec2_instance --regions=ap-northeast-1
-
+```
 # Or you want to convert by id
 ```hcl
 resource "aws_instance" "my_server" {
