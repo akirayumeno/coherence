@@ -22,6 +22,8 @@ lastmod: '2020-10-09'
 - [Impact of COVID-19 on Work-Life Balance: Analysis of Gender Disparities](https://ssjda.iss.u-tokyo.ac.jp/Direct/resultsearch.php?eid=1427)
 
 ## Qualifications
+- April 2026: AWS Certified Solutions Architect - Professional
+- February 2026: AWS Certified Solutions Architect - Associate
 - October 2024: Fundamental Information Technology Engineer Examination (IP Test)
 - January 2024: Boki Grade 3 (IP Test) 
 - October 2022: TOEIC L&R 805 (IP Test)
